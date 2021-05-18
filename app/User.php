@@ -43,7 +43,7 @@ class User extends Authenticatable
     }//function ends here is admin
 
     public function posts(){
-        return $this->hasMany('App\Post');
+        return $this->hasMany('App\Post','user_id');
     }
 
 

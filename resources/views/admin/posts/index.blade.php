@@ -20,6 +20,8 @@
          <tbody>
 
 
+
+
         @if($posts)
 
             @foreach($posts as $post)
@@ -27,7 +29,7 @@
 
                <td>{{$post->id}}</td>
                <td>{{$post->user->name}}</td>
-               <td>{{$post->user_category}}</td>
+               <td>{{$post->category?$post->category->name:'UnCategorized'}}</td>
               
                <td><img src="{{$post->photo? $post->photo->file : 'http://placehold.it//400x400'}}" height='50px'></td>
 

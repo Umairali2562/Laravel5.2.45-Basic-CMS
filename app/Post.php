@@ -26,7 +26,7 @@ class Post extends Model
     }
 
     public function category(){
-        return $this->belongsTo('App\Category');
+        return $this->belongsTo('App\Category','user_category');
     }
 
     /// bus ya yad rakhna k access kase horaha ha

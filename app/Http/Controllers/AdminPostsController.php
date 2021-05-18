@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Category;
 use App\Photo;
 use App\Post;
 use Illuminate\Foundation\Auth\User;
@@ -21,9 +21,11 @@ class AdminPostsController extends Controller
     public function index()
     {
         $posts=Post::all();
-        //$users=user::all();
+        $users=user::all();
 
-        return view('admin.posts.index',compact('posts'));
+
+
+        return view('admin.posts.index',compact('posts','users'));
     }
 
     /**
@@ -33,7 +35,10 @@ class AdminPostsController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.create');
+        $categories=Category::lists('name','id')->all();
+
+
+        return view('admin.posts.create',compact('categories'));
     }
 
     /**
