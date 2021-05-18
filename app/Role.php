@@ -6,8 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
-    protected $fillable = [
+    /*protected $fillable = [
        'id', 'name',
-    ];
+    ];*/
+
+    protected $guarded = [''];
 }
 //$filable=['name'];
