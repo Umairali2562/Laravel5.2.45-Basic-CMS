@@ -3,21 +3,8 @@
 
 
 @section('content')
-    <h1>Edit Users</h1>
-
-
-<div class="row">
-    <div class="col-sm-3">
-
-        <img src="{{$user->photo?"../../".$user->photo->file:"http://placehold.it/400x400"}}" alt="" class="img-responsive img-rounded">
-    </div>
-
-
-
-    <div class="col-sm-9">
-
-
-    {!! Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@update',$user->id], 'files'=>true]) !!}
+    <h1>Create Users</h1>
+    {!! Form::model($post,['method'=>'PATCH','action'=>['AdminUsersController@update',$post->id], 'files'=>true]) !!}
     <div class="form-group">
         {!! Form::label('Name','Name:') !!}
         {!! Form::text('name',null,['class'=>'form-control']) !!}
@@ -28,12 +15,12 @@
     </div>
     <div class="form-group">
         {!! Form::label('role_id','Role:') !!}
-        {!! Form::select('role_id',$roles,null,['class'=>'form-control']) !!}
+        {!! Form::select('role_id',$categories,null,['class'=>'form-control']) !!}
     </div>
 
     <div class="form-group">
         {!! Form::label('is_active','Status:') !!}
-        {!! Form::select('is_active',array(1=>'Active',0=>'Not Active'),null,['class'=>'form-control']) !!}
+        {!! Form::select('is_active',array(1=>'Active',0=>'Not Active'),0,['class'=>'form-control']) !!}
     </div>
 
 
@@ -49,24 +36,10 @@
 
 
     <div class="form-group">
-        {!! Form::submit('Edit User',['class'=>'btn btn-primary col-sm-2 mybtn']) !!}
+        {!! Form::submit('Create User',['class'=>'btn btn-primary']) !!}
     </div>
     {!! Form::close() !!}
 
-        {!! Form::open(['method'=>'DELETE','action'=>['AdminUsersController@destroy',$user->id]]) !!}
-
-        <div class="form-group">
-            {!! Form::submit('Delete User',['class'=>'btn btn-danger col-sm-2 mybtn']) !!}
-        </div>
-        {!! Form::close() !!}
-
-    </div>
-
-</div>
-
-<div class="row">
     @include('includes.form_error')
-</div>
-
 
 @stop

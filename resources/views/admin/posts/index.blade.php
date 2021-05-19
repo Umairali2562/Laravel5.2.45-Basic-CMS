@@ -34,7 +34,7 @@
                <td><img src="{{$post->photo? $post->photo->file : 'http://placehold.it//400x400'}}" height='50px'></td>
 
                <td>{{$post->title}}</td>
-               <td>{{$post->body}}</td>
+               <td>{{str_limit($post->body,8)}}</td>
                <td>{{$post->created_at->diffforhumans()}}</td>
                <td>{{$post->updated_at->diffforhumans()}}</td>
            </tr>

@@ -1,0 +1,41 @@
+[33mcommit 916a34468c44a319b7c7be7b3a385741862ccdf3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Umair Ali <umairali2562@gmail.com>
+Date:   Tue May 18 18:14:23 2021 +0500
+
+    till edit post starting
+
+[33mcommit 7d8b8e404565ee9c064c92176d580cdb8b21ea13[m
+Author: Umair Ali <umairali2562@gmail.com>
+Date:   Tue May 18 17:27:02 2021 +0500
+
+    to be able to create posts with dynamic categories
+
+[33mcommit e5e6c0f10c91b154bfc4b7414ca4aba15bb31c5f[m
+Author: Umair Ali <umairali2562@gmail.com>
+Date:   Tue May 18 13:02:01 2021 +0500
+
+    able to create posts with static category
+
+[33mcommit b6aac9be6747114de872b9daef74ba375500cca1[m
+Author: Umair Ali <umairali2562@gmail.com>
+Date:   Thu May 6 15:10:57 2021 +0500
+
+    users page working without photos
+
+[33mcommit bed5df1faf1e625e712b2724f094d95b5ecb8f7e[m
+Author: Umair Ali <umairali2562@gmail.com>
+Date:   Thu May 6 15:10:08 2021 +0500
+
+    users able to persist
+
+[33mcommit a59efb1c6f6db19918061eb8511290307e7b31ba[m
+Author: Umair <umairali2562@gmail.com>
+Date:   Mon Mar 8 07:15:53 2021 +0500
+
+    admin master page setup
+
+[33mcommit bec750cee278731cb0fd437c839c8fe9c4f020e9[m
+Author: Umair <umairali2562@gmail.com>
+Date:   Tue Mar 2 19:34:23 2021 +0500
+
+    my first commit - admin views creating

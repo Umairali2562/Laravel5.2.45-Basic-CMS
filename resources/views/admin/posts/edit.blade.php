@@ -3,9 +3,9 @@
 
 @section('content')
 
-    <h1>Edit a Posts</h1>
+    <h1>Create a Posts</h1>
     <div class="row">
-        {!! Form::open(['method'=>'PATCH','action'=>['AdminPostsController@update',$post->id],'files'=>true]) !!}
+        {!! Form::model($post,['method'=>'PATCH','action'=>['AdminPostsController@update',$post->id],'files'=>true]) !!}
 
 
 
@@ -18,7 +18,7 @@
 
         <div class="form-group">
             {!! Form::label('category_id','Category:') !!}
-            {!! Form::select('user_category',$categories,null,['class'=>'form-control']) !!}
+            {!! Form::select('category_id',$categories,null,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
@@ -35,7 +35,7 @@
 
 
         <div class="form-group">
-            {!! Form::submit('Create Post',['class'=>'btn btn-primary']) !!}
+            {!! Form::submit('Update Post',['class'=>'btn btn-primary']) !!}
         </div>
 
         {!! Form::close() !!}
