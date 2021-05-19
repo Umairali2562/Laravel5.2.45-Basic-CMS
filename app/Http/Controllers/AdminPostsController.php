@@ -105,7 +105,7 @@ class AdminPostsController extends Controller
 
         $input=$request->all();
 
-       /* if($file=$request->file('photo_id')){
+        if($file=$request->file('photo_id')){
 
             $name=time().$file->getClientOriginalName();
 
@@ -116,8 +116,8 @@ class AdminPostsController extends Controller
             $input['photo_id']=$photo->id;
         }
 
-        Auth::user()->post()->where($id)->first()->update($input);
-        //return redirect('/admin/posts');*/
+        Auth::user()->posts()->whereId($id)->first()->update($input);
+        return redirect('/admin/posts');
     }
 
     /**
