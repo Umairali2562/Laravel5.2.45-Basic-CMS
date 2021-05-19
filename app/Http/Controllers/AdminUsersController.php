@@ -99,6 +99,7 @@ class AdminUsersController extends Controller
         return view('admin.users.edit',compact('user','roles'));
     }
 
+
     /**
      * Update the specified resource in storage.
      *

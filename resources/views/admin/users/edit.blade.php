@@ -4,7 +4,7 @@
 
 @section('content')
     <h1>Create Users</h1>
-    {!! Form::model($post,['method'=>'PATCH','action'=>['AdminUsersController@update',$post->id], 'files'=>true]) !!}
+    {!! Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@update',$user->id], 'files'=>true]) !!}
     <div class="form-group">
         {!! Form::label('Name','Name:') !!}
         {!! Form::text('name',null,['class'=>'form-control']) !!}
@@ -15,7 +15,7 @@
     </div>
     <div class="form-group">
         {!! Form::label('role_id','Role:') !!}
-        {!! Form::select('role_id',$categories,null,['class'=>'form-control']) !!}
+        {!! Form::select('role_id',$roles,null,['class'=>'form-control']) !!}
     </div>
 
     <div class="form-group">
@@ -36,10 +36,26 @@
 
 
     <div class="form-group">
-        {!! Form::submit('Create User',['class'=>'btn btn-primary']) !!}
-    </div>
+        {!! Form::submit('Update User',['class'=>'btn btn-primary col-sm-2 mybtn']) !!}
     {!! Form::close() !!}
 
-    @include('includes.form_error')
+
+    </div>
+
+
+        {!! Form::open(['method'=>'DELETE','action'=>['AdminUsersController@destroy',$user->id]]) !!}
+
+        <div class="form-group">
+            {!! Form::submit('Delete User',['class'=>'btn btn-danger col-sm-2 mybtn']) !!}
+        </div>
+
+        {!! Form::close() !!}
+
+
+
+
+    <div class="row">
+        @include('includes.form_error')
+    </div>
 
 @stop
