@@ -118,7 +118,20 @@
                     <li>
                         <a href="/admin"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
+                    <li>
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i>Roles<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{route('admin.permissions.index')}}">All Roles</a>
+                            </li>
 
+                            <li>
+                                <a href="{{route('admin.permissions.create')}}">Create Roles</a>
+                            </li>
+
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                     <li>
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Users<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
