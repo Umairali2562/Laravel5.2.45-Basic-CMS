@@ -42,9 +42,10 @@ class UserPermissionsController extends Controller
     public function store(Request $request)
     {
 
-        $role_id=$request->role_id; //this is the role_id , administrator=1
-        $checks=$request->name; //thhis is the checkbox array
-        return $checks;
+       return $role_id=$request->role_id; //this is the role_id , administrator=1
+        $checks=$request->name;
+
+       // return $checks;
     }
 
     /**
