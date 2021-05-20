@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Permission;
 use App\Role;
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -40,7 +41,10 @@ class UserPermissionsController extends Controller
      */
     public function store(Request $request)
     {
-        return $request->all();
+
+        $role_id=$request->role_id; //this is the role_id , administrator=1
+        $checks=$request->name; //thhis is the checkbox array
+        return $checks;
     }
 
     /**

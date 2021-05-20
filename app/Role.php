@@ -11,5 +11,8 @@ class Role extends Model
     ];*/
 
     protected $guarded = [''];
+    public function permission(){
+        return $this->hasMany('App\Permission');
+    }
 }
 //$filable=['name'];

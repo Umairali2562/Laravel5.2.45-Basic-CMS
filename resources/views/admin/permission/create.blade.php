@@ -18,7 +18,7 @@
                 <div class="form-group">
                     @foreach($permissions as $permission)
                         {!! Form::label('permission_id'," ".$permission->name) !!}
-                  {{ Form::checkbox($permission->name,$permission->id,null, array('id'=>'asap')) }}
+                  {{ Form::checkbox('name[]',$permission->id,null, array('id'=>'asap')) }}
                     @endforeach
                 </div>
 
