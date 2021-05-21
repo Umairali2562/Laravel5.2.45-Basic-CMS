@@ -12,12 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b0d8e935-1d9f-4388-846e-8a0a37f30038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserPermissionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserPermissionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Permission.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_02_144017_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_02_144017_create_roles_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/permission/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/permission/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/permission/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/permission/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/permission/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/permission/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,14 @@
       <workItem from="1621420717600" duration="466000" />
       <workItem from="1621421201286" duration="4727000" />
       <workItem from="1621428566041" duration="1537000" />
-      <workItem from="1621504438095" duration="10013000" />
+      <workItem from="1621504438095" duration="11605000" />
+      <workItem from="1621581027828" duration="4155000" />
+      <workItem from="1621586052802" duration="2023000" />
+      <workItem from="1621588596735" duration="1112000" />
+      <workItem from="1621590817720" duration="1270000" />
+      <workItem from="1621592412390" duration="79000" />
+      <workItem from="1621592542377" duration="8649000" />
+      <workItem from="1621601801426" duration="1983000" />
     </task>
     <servers />
   </component>
@@ -204,21 +212,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1621510025466" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1621254671646">
+    <state x="184" y="8" key="SettingsEditor" timestamp="1621581190261">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621254671646" />
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621581190261" />
     <state x="92" y="92" width="1182" height="544" key="dock-window-1" timestamp="1621320756997">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1621320756997" />
-    <state x="339" y="164" key="run.anything.popup" timestamp="1621409715767">
+    <state x="339" y="164" key="run.anything.popup" timestamp="1621591342754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1621409715767" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621238040323">
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1621591342754" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621591006978">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1621238040323" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1621591006978" />
   </component>
 </project>

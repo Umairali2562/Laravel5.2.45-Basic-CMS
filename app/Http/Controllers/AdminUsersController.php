@@ -66,7 +66,7 @@ class AdminUsersController extends Controller
        //$input['password']=bcrypt($request->password);// encrypting the password from the request variable , and storing it in the input array
         user::create($input); //inserting all the input array in the user's table which means photo_id as well above
 
-        return redirect('/admin/users'); //returing the user to the display users
+        return redirect('/admin/users'); //returning the user to the display users
 
     }
 

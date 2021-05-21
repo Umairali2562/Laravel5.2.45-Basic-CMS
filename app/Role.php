@@ -11,8 +11,17 @@ class Role extends Model
     ];*/
 
     protected $guarded = [''];
+
     public function permission(){
-        return $this->hasMany('App\Permission');
+        $permissions = Permission::whereIn('id', json_decode($this->attributes['permissions']))->get();
+
+
+        return $permissions;
+    }
+
+    public function hasAccess($permissionName)
+    {
+
     }
 }
 //$filable=['name'];

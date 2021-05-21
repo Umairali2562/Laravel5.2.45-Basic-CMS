@@ -18,7 +18,10 @@ class UserPermissionsController extends Controller
      */
     public function index()
     {
-        return view('admin.permission.index');
+        $roles=Role::all();
+        $permissions=Permission::all();
+
+        return view('admin.permission.index',compact('roles','permissions'));
     }
 
     /**
@@ -42,10 +45,13 @@ class UserPermissionsController extends Controller
     public function store(Request $request)
     {
 
-       return $role_id=$request->role_id; //this is the role_id , administrator=1
-        $checks=$request->name;
 
-       // return $checks;
+        $input['name']=$request->title;
+
+
+
+      $roles=Role::create($input);
+
     }
 
     /**
@@ -67,7 +73,10 @@ class UserPermissionsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $roles=Role::findorFail($id);
+
+        $allpermissions=Permission::all();
+        return view('admin.permission.edit',compact('roles','allpermissions'));
     }
 
     /**
