@@ -39,7 +39,7 @@
                 @endif
 
                 <label>{{$allpermission->name}}</label>
-                <input type="checkbox" {{$counter==1?'checked':''}}  name="name[]"  value="{{$allpermission->name}}">
+                <input type="checkbox" {{$counter==1?'checked':''}}  name="mypermissions[]"  value="{{$allpermission->id}}">
 
 
         @endforeach

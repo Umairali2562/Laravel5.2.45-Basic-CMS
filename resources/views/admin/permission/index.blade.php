@@ -32,8 +32,12 @@
                     <td>{{$id=$role->id}}</td>
                     <td><a href="{{route('admin.permissions.edit',$role->id)}}">{{$role->name}}</a></td>
                     <td>
-                    @foreach($role->permission() as $permission)
-                    {{$permission->name}}
+                        @php
+                        $No="No Permission";
+                    @endphp
+
+                        @foreach($role->permission() as $permission)
+                    {{$permission?$permission->name:$No}}
                     @endforeach
                     </td>
                     <td>{{$role->created_at?$role->created_at->diffForhumans():'..'}}</td>

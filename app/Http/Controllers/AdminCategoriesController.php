@@ -2,15 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Permission;
-use App\Role;
-use App\User;
+use App\Category;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use Illuminate\Support\Facades\DB;
 
-class UserPermissionsController extends Controller
+class AdminCategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,10 +16,9 @@ class UserPermissionsController extends Controller
      */
     public function index()
     {
-        $roles=Role::all();
-        $permissions=Permission::all();
+        $categories=Category::all();
 
-        return view('admin.permission.index',compact('roles','permissions'));
+        return view('admin.categories.index',compact('categories'));
     }
 
     /**
@@ -32,9 +28,7 @@ class UserPermissionsController extends Controller
      */
     public function create()
     {
-        $permissions=Permission::all();
-        $roles=Role::lists('name','id')->all();
-        return view('admin.permission.create',compact('roles','permissions'));
+
     }
 
     /**
@@ -45,14 +39,9 @@ class UserPermissionsController extends Controller
      */
     public function store(Request $request)
     {
-
-
-        $input['name']=$request->title;
-
-
-
-      $roles=Role::create($input);
-        return redirect('/admin/permissions');
+        $name=$request->name;
+        Category::create(['name'=>$name]);
+        return redirect('/admin/categories');
     }
 
     /**
@@ -74,10 +63,7 @@ class UserPermissionsController extends Controller
      */
     public function edit($id)
     {
-        $roles=Role::findorFail($id);
-
-        $allpermissions=Permission::all();
-        return view('admin.permission.edit',compact('roles','allpermissions'));
+        //
     }
 
     /**
@@ -89,13 +75,7 @@ class UserPermissionsController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-         $permissions=$request->mypermissions;
-         $ok=json_encode(($permissions),true);
-        //echo $ok;
-            $thepermission=array('permissions'=>$ok);
-            Role::where('id',$id)->update($thepermission);
-            return redirect('/admin/permissions');
+        //
     }
 
     /**
@@ -106,7 +86,6 @@ class UserPermissionsController extends Controller
      */
     public function destroy($id)
     {
-        Role::destroy($id);
-        return redirect('/admin/permissions');
+        //
     }
 }

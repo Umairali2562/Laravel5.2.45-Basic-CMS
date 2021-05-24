@@ -33,6 +33,7 @@ Route::group(['middleware'=>'Admin'],function(){
     Route::resource('/admin/users','AdminUsersController');
     Route::resource('/admin/posts','AdminPostsController');
     Route::resource('/admin/permissions','UserPermissionsController');
+    Route::resource('/admin/categories','AdminCategoriesController');
 
 });
 
