@@ -19,9 +19,9 @@ class Role extends Model
         return $permissions;
     }
 
-    public function hasAccess($permissionName)
+    public function hasAccess()
     {
-
+        return "its working";
     }
 }
 //$filable=['name'];

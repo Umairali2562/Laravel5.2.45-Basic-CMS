@@ -19,7 +19,16 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/zhc',function(){
 
+    $permissions=Auth::user()->role->permission();
+    foreach($permissions as $permission){
+        echo $permission->name;
+    }
+
+    $ok=Auth::user()->role->hasAccess();
+    //return $permissions;
+});
 
 
 
