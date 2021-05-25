@@ -4,6 +4,17 @@
 
 @section('content')
     <h1>Create Users</h1>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+
+
+            <img src="{{$user->photo?  str_replace("../","../../../",$user->photo->file) : 'http://placehold.it//400x400'}}" height='140px'>
+
+        </div>
+
+        <div class="col-sm-9">
     {!! Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@update',$user->id], 'files'=>true]) !!}
     <div class="form-group">
         {!! Form::label('Name','Name:') !!}
@@ -50,8 +61,8 @@
         </div>
 
         {!! Form::close() !!}
-
-
+        </div>
+        </div>
 
 
     <div class="row">

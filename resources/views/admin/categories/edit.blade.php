@@ -7,7 +7,7 @@
 
     <div class="col-sm-6">
 
-        {!! Form::open(['method'=>'POST','action'=>'AdminCategoriesController@store','files'=>true]) !!}
+        {!! Form::model($category,['method'=>'PATCH','action'=>['AdminCategoriesController@update',$category->id]]) !!}
 
 
 
@@ -19,7 +19,15 @@
 
 
         <div class="form-group">
-            {!! Form::submit('Create Category',['class'=>'btn btn-primary']) !!}
+            {!! Form::submit('Update Category',['class'=>'btn btn-primary col-sm-5']) !!}
+        </div>
+
+        {!! Form::close() !!}
+
+        {!! Form::open(['method'=>'DELETE','action'=>['AdminCategoriesController@destroy',$category->id]]) !!}
+
+        <div class="form-group">
+            {!! Form::submit('Delete Category',['class'=>'btn btn-danger col-sm-5 mybtn']) !!}
         </div>
 
         {!! Form::close() !!}
@@ -32,29 +40,8 @@
 
     <div class="col-sm-6">
 
-        @if($categories)
 
 
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Created</th>
-
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($categories as $category)
-                    <tr>
-                        <td>{{$category->id}}</td>
-                        <td>{{$category->name}}</td>
-                        <td>{{$category->created_at?$category->created_at->diffForHumans():'No Date'}}</td>
-                    </tr>
-                @endforeach
-                </tbody>
-            </table>
-        @endif
     </div>
 
 
