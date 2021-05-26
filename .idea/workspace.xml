@@ -14,6 +14,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16213197881.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16213202331.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16213254221.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16213254371.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16213254451.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16213372361.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214083841.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214084591.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214085431.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214085901.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214086831.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214087001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214087621.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214212801.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16214212971.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16218515341.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16218521591.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16219308891.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/16219380551.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +130,11 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\zhc\um\Application\resources\views\admin" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -185,7 +210,11 @@
       <workItem from="1621853234348" duration="2667000" />
       <workItem from="1621924779134" duration="2359000" />
       <workItem from="1621929119986" duration="367000" />
-      <workItem from="1621930770940" duration="4075000" />
+      <workItem from="1621930770940" duration="6012000" />
+      <workItem from="1622009960451" duration="4301000" />
+      <workItem from="1622017071873" duration="2770000" />
+      <workItem from="1622022345562" duration="601000" />
+      <workItem from="1622022997916" duration="5927000" />
     </task>
     <servers />
   </component>
@@ -213,22 +242,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621235788278" />
-    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1621510025466">
+    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1622025429344">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1621510025466" />
+    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1622025429344" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1621581190261">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621581190261" />
-    <state x="92" y="92" width="1182" height="544" key="dock-window-1" timestamp="1621320756997">
+    <state x="75" y="68" width="1021" height="515" key="dock-window-1" timestamp="1622015134518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1621320756997" />
-    <state x="339" y="164" key="run.anything.popup" timestamp="1621851100517">
+    <state x="75" y="68" width="1021" height="515" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1622015134518" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1622010641634">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1621851100517" />
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1622010641634" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621931157003">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

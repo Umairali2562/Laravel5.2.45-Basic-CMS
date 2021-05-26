@@ -19,9 +19,12 @@ class Role extends Model
         return $permissions;
     }
 
-    public function hasAccess()
+    public function hasAccess($mypermissions)
     {
-        return "its working";
+      $permissions=json_encode($mypermissions,true);
+      $p=json_decode($permissions);
+      echo $p[0]->name;
+    print_r($mypermissions);
     }
 }
 //$filable=['name'];

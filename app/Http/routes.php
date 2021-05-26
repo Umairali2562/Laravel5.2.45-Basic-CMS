@@ -22,12 +22,13 @@ Route::get('/home', 'HomeController@index');
 Route::get('/zhc',function(){
 
     $permissions=Auth::user()->role->permission();
-    foreach($permissions as $permission){
+    /*foreach($permissions as $permission){
         echo $permission->name;
-    }
+    }*/
 
-    $ok=Auth::user()->role->hasAccess();
-    //return $permissions;
+    $ok=Auth::user()->role->hasAccess($permissions);
+    //return $per
+    //missions;
 });
 
 
@@ -43,6 +44,9 @@ Route::group(['middleware'=>'Admin'],function(){
     Route::resource('/admin/posts','AdminPostsController');
     Route::resource('/admin/permissions','UserPermissionsController');
     Route::resource('/admin/categories','AdminCategoriesController');
+    Route::resource('/admin/media','AdminMediasController');
+    //Route::get('/admin/media/upload',['as'=>'admin.media.upload','uses'=>'AdminMediasController@store']);
+
 
 });
 
